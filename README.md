@@ -1,69 +1,18 @@
-[Arno's Engram]: https://engram.dev
-
-# Engrammer - [Arno's Engram] layout for programmers
-
-This is a programmer-friendly variant of [Arno's Engram] 2.0 keyboard
-layout that helps maintain cross-proficiency with standard keyboards:
-
-* Shifted pairs are standard (e.g. quotes don't shift to parentheses).
-* Semicolon is placed relative to comma and period just like standard.
-* Equals and square brackets are placed near their standard locations.
-
-In addition, application shortcuts that assume standard shifted pairs,
-such as Control-Equals for the "zoom in" operation, now work properly.
-
-To illustrate the differences between this layout, Engram, and QWERTY:
-
->*Legend:* Gold is [Arno's Engram]; Blue is Engram-like; Pink is new.
->![Rendering of this layout on a standard 60% keyboard.](https://raw.githubusercontent.com/sunaku/engrammer/main/layout.png)
->![Rendering of this layout on an ortholinear keyboard.](https://raw.githubusercontent.com/sunaku/engrammer/main/ortho.png)
->
+# Layout
 >     `~ 1! 2@ 3# 4$  5%  6^  7& 8* 9( 0) [{ ]}
 >        bB yY oO uU  '"  ;:  lL dD wW vV zZ =+ \|
 >        cC iI eE aA  ,<  .>  hH tT sS nN qQ
 >        gG xX jJ kK  -_  /?  rR mM fF pP
 
-For example, here are my split ortholinear keyboards using this layout:
-
-* This is [my Glove80](https://sunaku.github.io/moergo-glove80-keyboard.html) keyboard by MoErgo:
->![Photo of MoErgo Glove80](https://raw.githubusercontent.com/sunaku/sunaku.github.io/master/moergo-glove80-keyboard-photograph.jpg)
->![Layout of MoErgo Glove80](https://raw.githubusercontent.com/sunaku/sunaku.github.io/master/moergo-glove80-keyboard-base-layer.png)
-
-* This is [my Remnant](https://sunaku.github.io/ergohaven-remnant-keyboard.html) keyboard by Ergohaven:
->![Photo of Ergohaven Remnant](https://raw.githubusercontent.com/sunaku/sunaku.github.io/master/ergohaven-remnant-keyboard-photograph.jpg)
->![Layout of Ergohaven Remnant](https://raw.githubusercontent.com/sunaku/sunaku.github.io/master/ergohaven-remnant-keyboard-base-layer.png)
-
-## Linux setup
-
-Install:
-
+# Install:
     cd linux/
     sudo make install
-    echo Now restart your graphical session.
 
-Activate:
-
-    setxkbmap -layout us    -variant engrammer         # one layout; no switch
-    setxkbmap -layout us,us -variant engrammer,basic   # dual layout switching
-
-Repair (e.g. whenever a system-wide XKB package upgrade reverts installation):
-
+# Uninstall:
     cd linux/
-    sudo make reinstall
-    echo Now restart your graphical session.
+    make uninstall
 
-Uninstall:
-
-    cd linux/
-    sudo make uninstall
-    echo Now restart your graphical session.
-
-## Windows setup
-
-You can [download a pre-built installation package](
-  https://github.com/sunaku/engrammer/releases/download/windows/engrammer.zip
-) or build one yourself, like this:
-
+# Windows setup
 1. Install the official _Microsoft Keyboard Layout Creator_ app: [MSKLC version 1.4](
   https://www.microsoft.com/en-us/download/details.aspx?id=102134
 ).
@@ -74,8 +23,7 @@ You can [download a pre-built installation package](
 
 4. Open the resulting build directory and run the `setup.exe` installer file.
 
-## License
-
+# License
 Released under the same terms as [Arno's Engram]:
 
 > MIT License
