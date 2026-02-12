@@ -5,8 +5,13 @@
 >        gG xX jJ kK  -_  /?  rR mM fF pP
 
 # Install:
+## Using sudo
     cd linux/
     sudo make install
+## Without sudo
+If you are not using `sudo` (eg. using `su`) define the correct user.
+	cd linux/
+	make install TARGET_USER=<user>
 
 # Uninstall:
     cd linux/
